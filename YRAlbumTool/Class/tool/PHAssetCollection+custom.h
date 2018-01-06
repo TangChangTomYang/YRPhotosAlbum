@@ -24,7 +24,7 @@
 
 
 /** 根据相册的 子类型 获取对应的相册, 一个子类型可能有多个相册 () */
-+ (PHFetchResult<PHAssetCollection *> *)assetCollectionFor_assetCollectionSubtype:(PHAssetCollectionSubtype)subType;
++ (NSMutableArray<PHAssetCollection *> *)assetCollectionFor_assetCollectionSubtype:(PHAssetCollectionSubtype)subType;
 
 /** 根据一堆 相册的子 类型 或去对应的相册  */
 +(NSArray *)assetClloctionArrFor_subTypeArr:(NSArray<NSNumber *> *)subTypeArr;
@@ -35,6 +35,10 @@
 
 
 #pragma mark- 相册资源相关
+/** 将指定的  assetArr 从对应的相册中移除 */
++(BOOL)removeAssetArr:(NSArray<PHAsset *> *)assetArr fromAssetCollction:(PHAssetCollection *)assetCollection;
+
+
 /** 将 asset 保存到指定的相册 (将asset 从相机胶卷copy 一份到 assetCollection) */
 +(BOOL)saveAsset:(PHAsset *)asset toAssetCollction:(PHAssetCollection *)assetCollection;
 

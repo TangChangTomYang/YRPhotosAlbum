@@ -64,7 +64,7 @@
 /** 获取系统的 相机胶卷相册 */
 +(PHAssetCollection *)systemCameraRollAlbum{
     
-    PHFetchResult<PHAssetCollection *> * assetCollectionResult= [self assetCollectionFor_assetCollectionSubtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary];
+    NSMutableArray<PHAssetCollection *> * assetCollectionResult= [self assetCollectionFor_assetCollectionSubtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary];
     
     return assetCollectionResult.firstObject;
     
@@ -75,7 +75,7 @@
 
 
 /** 根据相册的 子类型 获取对应的相册, 一个子类型可能有多个相册 () */
-+ (PHFetchResult<PHAssetCollection *> *)assetCollectionFor_assetCollectionSubtype:(PHAssetCollectionSubtype)subType{
++ (NSMutableArray<PHAssetCollection *> *)assetCollectionFor_assetCollectionSubtype:(PHAssetCollectionSubtype)subType{
     
 
     
@@ -97,7 +97,7 @@
         
         PHAssetCollectionSubtype subType = (PHAssetCollectionSubtype)[subTypeNum intValue];
         
-        PHFetchResult<PHAssetCollection *> * assetCollectionResult = [self assetCollectionFor_assetCollectionSubtype:subType];
+        NSMutableArray<PHAssetCollection *> * assetCollectionResult = [self assetCollectionFor_assetCollectionSubtype:subType];
         
         for (PHAssetCollection * assetCollection in assetCollectionResult) {
             [assetCollectionArrM addObject:assetCollection];
@@ -213,6 +213,28 @@
     return (err == nil);
     
 }
+
+/** 将指定的  assetArr 从对应的相册中移除 */
++(BOOL)removeAssetArr:(NSArray<PHAsset *> *)assetArr fromAssetCollction:(PHAssetCollection *)assetCollection{
+    if(assetArr.count == 0 || assetCollection == nil){
+        return NO;
+    }
+    
+    NSError *err = nil;
+    [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
+        PHAssetCollectionChangeRequest *request =  [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
+        [request removeAssets:assetArr];
+        //PHObjectPlaceholder *assetPlaceHolder =
+        //[request addAssets:@[assetPlaceHolder]]; 这里也可以放图片的站位对象,也是可以的
+    } error:&err];
+    
+    
+    return (err == nil);
+    
+}
+
+
+
 
 /** 将 一堆 asset 保存到 指定的相册(自己) (将asset 从相机胶卷copy 一份到 assetCollection)*/
 -(BOOL)saveAssetArr:(NSArray<PHAsset *> *)assetArr{
