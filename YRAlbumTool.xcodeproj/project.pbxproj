@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		147210901FC5915B00104437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472108F1FC5915B00104437 /* main.m */; };
+		147210931FC5915B00104437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147210921FC5915B00104437 /* AppDelegate.m */; };
+		147210961FC5915B00104437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147210951FC5915B00104437 /* ViewController.m */; };
+		147210991FC5915B00104437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147210971FC5915B00104437 /* Main.storyboard */; };
+		1472109B1FC5915B00104437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1472109A1FC5915B00104437 /* Assets.xcassets */; };
+		1472109E1FC5915B00104437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1472109C1FC5915B00104437 /* LaunchScreen.storyboard */; };
+		2F314F821FFF1A75004E7A4F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F314F811FFF1A75004E7A4F /* UIView+Extension.m */; };
+		2FDF3128200078610074A8D5 /* YRAlbum_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF3124200078610074A8D5 /* YRAlbum_ViewController.m */; };
+		2FDF3129200078610074A8D5 /* YRAlbum_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF3127200078610074A8D5 /* YRAlbum_NavigationController.m */; };
+		2FDF314D20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF312D20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.m */; };
+		2FDF314E20007BFB0074A8D5 /* YRPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF312F20007BFB0074A8D5 /* YRPhotoListCell.m */; };
+		2FDF314F20007BFB0074A8D5 /* YRPhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDF313020007BFB0074A8D5 /* YRPhotoListCell.xib */; };
+		2FDF315020007BFB0074A8D5 /* PHAsset+custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313320007BFB0074A8D5 /* PHAsset+custom.m */; };
+		2FDF315120007BFB0074A8D5 /* PHAssetCollection+custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313520007BFB0074A8D5 /* PHAssetCollection+custom.m */; };
+		2FDF315220007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313720007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.m */; };
+		2FDF315320007BFB0074A8D5 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313920007BFB0074A8D5 /* TZLocationManager.m */; };
+		2FDF315420007BFB0074A8D5 /* YRAlbum_PreViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313D20007BFB0074A8D5 /* YRAlbum_PreViewViewController.m */; };
+		2FDF315520007BFB0074A8D5 /* YRPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF313F20007BFB0074A8D5 /* YRPreviewCell.m */; };
+		2FDF315920007BFB0074A8D5 /* YRPreviewToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDF314520007BFB0074A8D5 /* YRPreviewToolBar.xib */; };
+		2FDF315A20007BFB0074A8D5 /* YRPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF314720007BFB0074A8D5 /* YRPreviewView.m */; };
+		2FDF315B20007BFB0074A8D5 /* YRAlbum_collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF314A20007BFB0074A8D5 /* YRAlbum_collectionViewController.m */; };
+		2FDF315C20007BFB0074A8D5 /* YRAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF314C20007BFB0074A8D5 /* YRAlbumCell.m */; };
+		2FDF316320007D640074A8D5 /* YRCameraDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF316220007D640074A8D5 /* YRCameraDemoViewController.m */; };
+		2FDF3166200081110074A8D5 /* YRPreviewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF3165200081110074A8D5 /* YRPreviewToolBar.m */; };
+		2FE630DB1FD3B5F000D9A4C4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE630DA1FD3B5F000D9A4C4 /* TestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		146909231FC5A1F2009DED4F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		1472108B1FC5915B00104437 /* YRAlbumTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRAlbumTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1472108F1FC5915B00104437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		147210911FC5915B00104437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		147210921FC5915B00104437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		147210941FC5915B00104437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		147210951FC5915B00104437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		147210981FC5915B00104437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1472109A1FC5915B00104437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1472109D1FC5915B00104437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1472109F1FC5915B00104437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147210AD1FC594E800104437 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2F314F801FFF1A74004E7A4F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2F314F811FFF1A75004E7A4F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2FDF3124200078610074A8D5 /* YRAlbum_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbum_ViewController.m; sourceTree = "<group>"; };
+		2FDF3125200078610074A8D5 /* YRAlbum_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_NavigationController.h; sourceTree = "<group>"; };
+		2FDF3126200078610074A8D5 /* YRAlbum_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_ViewController.h; sourceTree = "<group>"; };
+		2FDF3127200078610074A8D5 /* YRAlbum_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbum_NavigationController.m; sourceTree = "<group>"; };
+		2FDF312C20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_PhotoListViewController.h; sourceTree = "<group>"; };
+		2FDF312D20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbum_PhotoListViewController.m; sourceTree = "<group>"; };
+		2FDF312E20007BFB0074A8D5 /* YRPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRPhotoListCell.h; sourceTree = "<group>"; };
+		2FDF312F20007BFB0074A8D5 /* YRPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRPhotoListCell.m; sourceTree = "<group>"; };
+		2FDF313020007BFB0074A8D5 /* YRPhotoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRPhotoListCell.xib; sourceTree = "<group>"; };
+		2FDF313220007BFB0074A8D5 /* PHAsset+custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+custom.h"; sourceTree = "<group>"; };
+		2FDF313320007BFB0074A8D5 /* PHAsset+custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+custom.m"; sourceTree = "<group>"; };
+		2FDF313420007BFB0074A8D5 /* PHAssetCollection+custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+custom.h"; sourceTree = "<group>"; };
+		2FDF313520007BFB0074A8D5 /* PHAssetCollection+custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+custom.m"; sourceTree = "<group>"; };
+		2FDF313620007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPhotosFetchUsrStatusTool.h; sourceTree = "<group>"; };
+		2FDF313720007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPhotosFetchUsrStatusTool.m; sourceTree = "<group>"; };
+		2FDF313820007BFB0074A8D5 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		2FDF313920007BFB0074A8D5 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		2FDF313A20007BFB0074A8D5 /* YRAlbum_difine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_difine.h; sourceTree = "<group>"; };
+		2FDF313C20007BFB0074A8D5 /* YRAlbum_PreViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_PreViewViewController.h; sourceTree = "<group>"; };
+		2FDF313D20007BFB0074A8D5 /* YRAlbum_PreViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbum_PreViewViewController.m; sourceTree = "<group>"; };
+		2FDF313E20007BFB0074A8D5 /* YRPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRPreviewCell.h; sourceTree = "<group>"; };
+		2FDF313F20007BFB0074A8D5 /* YRPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRPreviewCell.m; sourceTree = "<group>"; };
+		2FDF314520007BFB0074A8D5 /* YRPreviewToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRPreviewToolBar.xib; sourceTree = "<group>"; };
+		2FDF314620007BFB0074A8D5 /* YRPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRPreviewView.h; sourceTree = "<group>"; };
+		2FDF314720007BFB0074A8D5 /* YRPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRPreviewView.m; sourceTree = "<group>"; };
+		2FDF314920007BFB0074A8D5 /* YRAlbum_collectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbum_collectionViewController.h; sourceTree = "<group>"; };
+		2FDF314A20007BFB0074A8D5 /* YRAlbum_collectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbum_collectionViewController.m; sourceTree = "<group>"; };
+		2FDF314B20007BFB0074A8D5 /* YRAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRAlbumCell.h; sourceTree = "<group>"; };
+		2FDF314C20007BFB0074A8D5 /* YRAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRAlbumCell.m; sourceTree = "<group>"; };
+		2FDF316120007D640074A8D5 /* YRCameraDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRCameraDemoViewController.h; sourceTree = "<group>"; };
+		2FDF316220007D640074A8D5 /* YRCameraDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRCameraDemoViewController.m; sourceTree = "<group>"; };
+		2FDF3164200081110074A8D5 /* YRPreviewToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRPreviewToolBar.h; sourceTree = "<group>"; };
+		2FDF3165200081110074A8D5 /* YRPreviewToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRPreviewToolBar.m; sourceTree = "<group>"; };
+		2FE630D91FD3B5F000D9A4C4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2FE630DA1FD3B5F000D9A4C4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147210881FC5915B00104437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		146909221FC5A1F2009DED4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				146909231FC5A1F2009DED4F /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		147210821FC5915B00104437 = {
+			isa = PBXGroup;
+			children = (
+				1472108D1FC5915B00104437 /* YRAlbumTool */,
+				1472108C1FC5915B00104437 /* Products */,
+				146909221FC5A1F2009DED4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1472108C1FC5915B00104437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1472108B1FC5915B00104437 /* YRAlbumTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1472108D1FC5915B00104437 /* YRAlbumTool */ = {
+			isa = PBXGroup;
+			children = (
+				147210911FC5915B00104437 /* AppDelegate.h */,
+				147210921FC5915B00104437 /* AppDelegate.m */,
+				2FE630D91FD3B5F000D9A4C4 /* TestViewController.h */,
+				2FE630DA1FD3B5F000D9A4C4 /* TestViewController.m */,
+				147210941FC5915B00104437 /* ViewController.h */,
+				147210951FC5915B00104437 /* ViewController.m */,
+				147210971FC5915B00104437 /* Main.storyboard */,
+				2F314F801FFF1A74004E7A4F /* UIView+Extension.h */,
+				2F314F811FFF1A75004E7A4F /* UIView+Extension.m */,
+				147210A51FC5934A00104437 /* Class */,
+				1472109A1FC5915B00104437 /* Assets.xcassets */,
+				1472109C1FC5915B00104437 /* LaunchScreen.storyboard */,
+				147210AD1FC594E800104437 /* PrefixHeader.pch */,
+				1472109F1FC5915B00104437 /* Info.plist */,
+				1472108E1FC5915B00104437 /* Supporting Files */,
+			);
+			path = YRAlbumTool;
+			sourceTree = "<group>";
+		};
+		1472108E1FC5915B00104437 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1472108F1FC5915B00104437 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		147210A51FC5934A00104437 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF313A20007BFB0074A8D5 /* YRAlbum_difine.h */,
+				2FDF31232000781C0074A8D5 /* parent */,
+				2FDF315D20007C870074A8D5 /* camera */,
+				2FDF314820007BFB0074A8D5 /* album */,
+				2FDF312B20007BFB0074A8D5 /* photo */,
+				2FDF313B20007BFB0074A8D5 /* preview */,
+				2FDF313120007BFB0074A8D5 /* tool */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2FDF31232000781C0074A8D5 /* parent */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF3125200078610074A8D5 /* YRAlbum_NavigationController.h */,
+				2FDF3127200078610074A8D5 /* YRAlbum_NavigationController.m */,
+				2FDF3126200078610074A8D5 /* YRAlbum_ViewController.h */,
+				2FDF3124200078610074A8D5 /* YRAlbum_ViewController.m */,
+			);
+			path = parent;
+			sourceTree = "<group>";
+		};
+		2FDF312B20007BFB0074A8D5 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF312C20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.h */,
+				2FDF312D20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.m */,
+				2FDF312E20007BFB0074A8D5 /* YRPhotoListCell.h */,
+				2FDF312F20007BFB0074A8D5 /* YRPhotoListCell.m */,
+				2FDF313020007BFB0074A8D5 /* YRPhotoListCell.xib */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		2FDF313120007BFB0074A8D5 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF313220007BFB0074A8D5 /* PHAsset+custom.h */,
+				2FDF313320007BFB0074A8D5 /* PHAsset+custom.m */,
+				2FDF313420007BFB0074A8D5 /* PHAssetCollection+custom.h */,
+				2FDF313520007BFB0074A8D5 /* PHAssetCollection+custom.m */,
+				2FDF313620007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.h */,
+				2FDF313720007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.m */,
+				2FDF313820007BFB0074A8D5 /* TZLocationManager.h */,
+				2FDF313920007BFB0074A8D5 /* TZLocationManager.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		2FDF313B20007BFB0074A8D5 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF313C20007BFB0074A8D5 /* YRAlbum_PreViewViewController.h */,
+				2FDF313D20007BFB0074A8D5 /* YRAlbum_PreViewViewController.m */,
+				2FDF313E20007BFB0074A8D5 /* YRPreviewCell.h */,
+				2FDF313F20007BFB0074A8D5 /* YRPreviewCell.m */,
+				2FDF314520007BFB0074A8D5 /* YRPreviewToolBar.xib */,
+				2FDF3164200081110074A8D5 /* YRPreviewToolBar.h */,
+				2FDF3165200081110074A8D5 /* YRPreviewToolBar.m */,
+				2FDF314620007BFB0074A8D5 /* YRPreviewView.h */,
+				2FDF314720007BFB0074A8D5 /* YRPreviewView.m */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		2FDF314820007BFB0074A8D5 /* album */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF314920007BFB0074A8D5 /* YRAlbum_collectionViewController.h */,
+				2FDF314A20007BFB0074A8D5 /* YRAlbum_collectionViewController.m */,
+				2FDF314B20007BFB0074A8D5 /* YRAlbumCell.h */,
+				2FDF314C20007BFB0074A8D5 /* YRAlbumCell.m */,
+			);
+			path = album;
+			sourceTree = "<group>";
+		};
+		2FDF315D20007C870074A8D5 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF316120007D640074A8D5 /* YRCameraDemoViewController.h */,
+				2FDF316220007D640074A8D5 /* YRCameraDemoViewController.m */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1472108A1FC5915B00104437 /* YRAlbumTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147210A21FC5915B00104437 /* Build configuration list for PBXNativeTarget "YRAlbumTool" */;
+			buildPhases = (
+				147210871FC5915B00104437 /* Sources */,
+				147210881FC5915B00104437 /* Frameworks */,
+				147210891FC5915B00104437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YRAlbumTool;
+			productName = YRAlbumTool;
+			productReference = 1472108B1FC5915B00104437 /* YRAlbumTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147210831FC5915B00104437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "　yangrui";
+				TargetAttributes = {
+					1472108A1FC5915B00104437 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AP2R8WPL7H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 147210861FC5915B00104437 /* Build configuration list for PBXProject "YRAlbumTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147210821FC5915B00104437;
+			productRefGroup = 1472108C1FC5915B00104437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1472108A1FC5915B00104437 /* YRAlbumTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147210891FC5915B00104437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1472109E1FC5915B00104437 /* LaunchScreen.storyboard in Resources */,
+				2FDF314F20007BFB0074A8D5 /* YRPhotoListCell.xib in Resources */,
+				1472109B1FC5915B00104437 /* Assets.xcassets in Resources */,
+				2FDF315920007BFB0074A8D5 /* YRPreviewToolBar.xib in Resources */,
+				147210991FC5915B00104437 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147210871FC5915B00104437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F314F821FFF1A75004E7A4F /* UIView+Extension.m in Sources */,
+				2FDF315320007BFB0074A8D5 /* TZLocationManager.m in Sources */,
+				2FDF315A20007BFB0074A8D5 /* YRPreviewView.m in Sources */,
+				2FE630DB1FD3B5F000D9A4C4 /* TestViewController.m in Sources */,
+				2FDF3129200078610074A8D5 /* YRAlbum_NavigationController.m in Sources */,
+				147210961FC5915B00104437 /* ViewController.m in Sources */,
+				2FDF315520007BFB0074A8D5 /* YRPreviewCell.m in Sources */,
+				2FDF315B20007BFB0074A8D5 /* YRAlbum_collectionViewController.m in Sources */,
+				2FDF314D20007BFB0074A8D5 /* YRAlbum_PhotoListViewController.m in Sources */,
+				2FDF315420007BFB0074A8D5 /* YRAlbum_PreViewViewController.m in Sources */,
+				147210931FC5915B00104437 /* AppDelegate.m in Sources */,
+				2FDF315C20007BFB0074A8D5 /* YRAlbumCell.m in Sources */,
+				2FDF316320007D640074A8D5 /* YRCameraDemoViewController.m in Sources */,
+				2FDF314E20007BFB0074A8D5 /* YRPhotoListCell.m in Sources */,
+				2FDF3166200081110074A8D5 /* YRPreviewToolBar.m in Sources */,
+				2FDF315020007BFB0074A8D5 /* PHAsset+custom.m in Sources */,
+				2FDF315120007BFB0074A8D5 /* PHAssetCollection+custom.m in Sources */,
+				2FDF3128200078610074A8D5 /* YRAlbum_ViewController.m in Sources */,
+				2FDF315220007BFB0074A8D5 /* PHPhotosFetchUsrStatusTool.m in Sources */,
+				147210901FC5915B00104437 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		147210971FC5915B00104437 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147210981FC5915B00104437 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1472109C1FC5915B00104437 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1472109D1FC5915B00104437 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		147210A01FC5915B00104437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147210A11FC5915B00104437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147210A31FC5915B00104437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP2R8WPL7H;
+				GCC_PREFIX_HEADER = /Users/yang/Downloads/MyPhotoTool/YRAlbumTool/PrefixHeader.pch;
+				INFOPLIST_FILE = YRAlbumTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360gobuylight.LETTIN3.0.Widgetfasdgasd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		147210A41FC5915B00104437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP2R8WPL7H;
+				GCC_PREFIX_HEADER = /Users/yang/Downloads/MyPhotoTool/YRAlbumTool/PrefixHeader.pch;
+				INFOPLIST_FILE = YRAlbumTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.360gobuylight.LETTIN3.0.Widgetfasdgasd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147210861FC5915B00104437 /* Build configuration list for PBXProject "YRAlbumTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147210A01FC5915B00104437 /* Debug */,
+				147210A11FC5915B00104437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147210A21FC5915B00104437 /* Build configuration list for PBXNativeTarget "YRAlbumTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147210A31FC5915B00104437 /* Debug */,
+				147210A41FC5915B00104437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147210831FC5915B00104437 /* Project object */;
+}
